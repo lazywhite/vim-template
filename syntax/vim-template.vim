@@ -9,7 +9,9 @@ endif
 
 if b:vim_template_subtype != ""
 	execute "runtime! syntax/" . b:vim_template_subtype . ".vim"
-	unlet b:current_syntax
+	if exists(b:current_syntax)
+	    unlet b:current_syntax
+    endif
 endif
 
 syn match vimtemplateVariable "%\%(DAY\|YEAR\|MONTH\|MONTHSHORT\|MONTHFULL\|DATE\|TIME\|FILE\|FFILE\|EXT\|MAIL\|USER\|HOST\|GUARD\|CLASS\|MACROCLASS\|CAMELCLASS\|HERE\)%" containedin=ALL

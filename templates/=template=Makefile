@@ -3,9 +3,18 @@
 # %USER%, %FDATE%
 #
 
-all:
-	%HERE%@echo "%FFILE% needs your attention"
+$(shell mkdir -p build)
 
+FLAGS=""
+LIB=""
+
+.PHONY: build
+
+build:
+	g++ -I src -I ${FLAGS} -L ${LIB} -o build/main src/main.cpp
+
+run:
+	./build/main
 
 # vim:ft=make
 #

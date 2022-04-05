@@ -1,11 +1,14 @@
 cmake_minimum_required (VERSION 2.8)
 
+if (POLICY CMP0048)
+  cmake_policy(SET CMP0048 NEW)
+endif (POLICY CMP0048)
 # projectname is the same as the main-executable
 project(%HERE%%FDIR%)
 
 add_definitions('-g')
 add_definitions('-Wall')
-#add_definitions('-std=c++11')
+add_definitions('-std=c11')
 
 add_executable(${PROJECT_NAME} ${PROJECT_NAME}.cpp)
 
