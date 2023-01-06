@@ -1,5 +1,4 @@
 //
-// %FFILE%
 // Copyright (C) %YEAR% %USER% <%MAIL%>
 // Distributed under terms of the %LICENSE% license.
 //
@@ -12,6 +11,7 @@ mod tests {
 	use super::*;
 
 	#[test]
-	fn it_works() {
+	fn test_example() {
+		assert!(true);
 	}
 }
