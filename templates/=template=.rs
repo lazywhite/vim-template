@@ -3,15 +3,17 @@
 // Distributed under terms of the %LICENSE% license.
 //
 
-%HERE%
+fn main() {
+    %HERE%
+}
 
 
 #[cfg(test)]
 mod tests {
-	use super::*;
+	  use super::*;
 
-	#[test]
-	fn test_example() {
-		assert!(true);
-	}
+	  #[test]
+	  fn test_example() {
+		    assert!(true);
+	  }
 }
