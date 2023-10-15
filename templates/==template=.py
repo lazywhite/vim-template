@@ -6,10 +6,10 @@
 #
 # Distributed under terms of the MIT license.
 
+"""
 import sys
 reload(sys)
 sys.setdefaultencoding("UTF8")
-
 """
 
-"""
+
